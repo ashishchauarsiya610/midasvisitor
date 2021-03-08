@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  isLabelActive: Boolean = false;
+  constructor () { }
+
+  toggleIcon(evt) {
+    this.isLabelActive = !this.isLabelActive;
+  }
 
 }
